@@ -60,5 +60,7 @@ prepared消息定义：`preared(m,v,n,i)`
 Commit-local(m,v,n,i)认证通过的条件，prepared(m,v,n,i)认证通过，并且收到2f+1（包括节点自身）个commits事件
 
 
+
+
 ## View Change 原理
 
