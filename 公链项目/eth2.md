@@ -15,6 +15,8 @@ ETH正在从POW转成POS，但是不可能一下子就能直接转换，肯定�
 
 - [Casper the Friendly Finality Gadget](https://arxiv.org/pdf/1710.09437.pdf)
 
+[[casper-ffg-paper-read]]
+
 ## 激励机制
 
 - [Incentives in Ethereum’s Hybrid Casper Protocol](https://arxiv.org/pdf/1903.04205.pdf)
