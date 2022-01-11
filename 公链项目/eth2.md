@@ -14,8 +14,10 @@ ETH正在从POW转成POS，但是不可能一下子就能直接转换，肯定�
 一开始有Capser CBC 和Casper FFG两条主导线路，
 
 - [Casper the Friendly Finality Gadget](https://arxiv.org/pdf/1710.09437.pdf)
+- [Casper FFG 在 ETH2.0 中的实现](https://ethfans.org/posts/casper-ffg-in-eth2-0)
+- [Combining GHOST and Casper](https://arxiv.org/pdf/2003.03052.pdf)
+- [[casper-ffg-paper-read]]
 
-[[casper-ffg-paper-read]]
 
 ## 激励机制
 
