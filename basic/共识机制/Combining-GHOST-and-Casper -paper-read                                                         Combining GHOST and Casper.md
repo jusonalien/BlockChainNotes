@@ -20,11 +20,19 @@
 casper使用树状结构来设计出一种更宽泛的区块链一致性协议，
 - 每个区块都有对应的高度（height），由当前区块与初始区块（高度为0）的距离定义，也就是说区块B的高度就是$chain(B)-1$
 - 定义检查点区块，高度是常量$H$的整数倍（H=100），那么检查点区块下的可以当作子树来看
-- 证人(Attestations): A和B都是检查点区块，
+- 证人(Attestations): 是包含检查点A和B作为边的签名消息，可以看作是从A到B的一次投票，选择区块A，B的逻辑不包括在Casper内，由区块链底部实现，每个`证人`都包含权重，由验证器所质押的数目决定。
+
+$h(B)=h(A)+1$是最理想的一种情况，但事实上并不强制要求如此，如果H=100，那么诚实的验证器有可能会丢失200号的区块，这种场景下底层的区块链可能会想让他发送一个从100号区块到300号区块到`证人`
+
+Casper-FFG引入了 justification 和finalization两个概念，类似于PBFT理论里面的prepare 和commit基于阶段的概念
 
 ### 3.2  LMD GHOST Fork-Choice rule(分叉规则)
 
 LMD-GHost : Latest Message Driven Greediest Heaviest Observed SubTree
+类似于一种贪心的规则
+![[Pasted image 20220111213332.png]]
+
+## 4 Main Protocol: Gasper
 
 ## 参考
 - [Combining GHOST and Casper](https://arxiv.org/pdf/2003.03052.pdf)
