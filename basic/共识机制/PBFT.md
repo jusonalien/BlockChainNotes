@@ -3,8 +3,9 @@
 - [详解实用拜占庭协议PBFT](https://learnblockchain.cn/2019/08/29/pbft/)
 
 ## 基本概念
+### 完成一次共识的流程
 
-
+![[Pasted image 20220113234711.png]]
 
 * View视图
 
@@ -35,7 +36,8 @@ PBFT有一个最基本最重要的大前提，只要非拜占庭节点（诚实�
 
 不同的view的消息是独立的，需要区分
 
-其中pre-prepare和prepare阶段最重要的任务是保证，同一个主节点发出的请求在同一个视图（view）中的顺序是一致的，prepare和commit阶段最重要的任务是保证请求在不同视图之间的顺序是一致的。
+- pre-prepare和prepare阶段最重要的任务是保证，同一个主节点发出的请求在同一个视图（view）中的顺序是一致的，
+- prepare和commit阶段最重要的任务是保证请求在不同视图之间的顺序是一致的。
 
 ## 为什么要经过Pre-Prepare、Prepare、Commit三个步骤？
 ### Pre-Prepare 和Prepare的作用
@@ -53,7 +55,7 @@ prepared消息定义：`preared(m,v,n,i)`
 > 解释：认证 preared(m',v,n,i) 有 2f+1个节点，认证preared(m,v,n,i) 也有2f+1个节点，从集合关系角度来看，即使里面混入了最大的f个欺骗节点，那这两个节点当中剩余的诚实节点都至少有一个公共的诚实节点，那就导致这个诚实节点同时发送了两个认证消息，导致了矛盾
 
 ### Prepare 与Commit的作用
-确保夸View的请求的顺序
+确保跨View的请求的顺序
 
 当节点进入到Prepared阶段的时候，就开始发起Commit请求进入到Commit-local的状态
 

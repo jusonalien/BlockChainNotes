@@ -33,6 +33,11 @@ LMD-GHost : Latest Message Driven Greediest Heaviest Observed SubTree
 ![[Pasted image 20220111213332.png]]
 
 ## 4 Main Protocol: Gasper
+### 4.1  Epoch Boundary Blocks and Pairs
+
+### 4.2  Committees（委员会）
+
+委员会的意义在于将验证器之间的责任划分开来
 
 ## 参考
 - [Combining GHOST and Casper](https://arxiv.org/pdf/2003.03052.pdf)
