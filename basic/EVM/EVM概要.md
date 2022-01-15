@@ -9,5 +9,4 @@
  - Externally owned account(EOA)：外部地址
  - Contract account：合约地址
 
-![[evm-account-type.png]]
-
+![](evm-account-type.png)
