@@ -5,7 +5,7 @@
 ## 基本概念
 ### 完成一次共识的流程
 
-![[Pasted image 20220113234711.png]]
+![](../../files/pbft-flow.png)
 
 * View视图
 
