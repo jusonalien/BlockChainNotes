@@ -14,9 +14,9 @@
 
 * 基本原理
   * 共识机制
-	  *  [PBFT-实用型拜占庭容错机制](basic/共识机制/PBFT.md)
-	  *  [ETH2.0共识机制-Casper-FFG初始框架解读](basic/共识机制/casper-ffg-paper-read.md)
-	  *  [ETH2.0共识机制-Casper-FFG深入理解](basic/共识机制/Combining-GHOST-and-Casper-paper-read.md)
+	  *  [PBFT-实用型拜占庭容错机制](basic/consensus/PBFT.md)
+	  *  [ETH2.0共识机制-Casper-FFG初始框架解读](basic/consensus/casper-ffg-paper-read.md)
+	  *  [ETH2.0共识机制-Casper-FFG深入理解](basic/consensus/Combining-GHOST-and-Casper-paper-read.md)
   * 基础数据结构
     * [Mekeley-Tree]
     * [Kademila]
