@@ -31,3 +31,6 @@ ETH正在从POW转成POS，但是不可能一下子就能直接转换，肯定�
 官方协议文档：
 
 - https://github.com/ethereum/consensus-specs
+
+设计原则：
+- https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Serenity-Design-Rationale
