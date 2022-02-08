@@ -37,7 +37,7 @@ LMD-GHost : Latest Message Driven Greediest Heaviest Observed SubTree
 
 ### 4.2  Committees（委员会）
 
-委员会的意义在于将验证器之间的责任划分开来
+委员会的意义在于将验证器之间的责任划分开来，在这会有一个预言机将这些验证器随机的排列组合开来，每个组合只会用在$epoch_j$当中, 这样做的原因是希望能用来伪随机地选择一些验证器来做委员会的角色
 
 ## 参考
 - [Combining GHOST and Casper](https://arxiv.org/pdf/2003.03052.pdf)
